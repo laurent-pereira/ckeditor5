@@ -57,6 +57,7 @@ import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleu
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
+import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -110,7 +111,8 @@ ClassicEditor.builtinPlugins = [
 	SimpleUploadAdapter,
 	TableProperties,
 	TableCellProperties,
-	HtmlEmbed
+	HtmlEmbed,
+	SourceEditing
 ];
 
 // Editor configuration.
@@ -156,7 +158,8 @@ ClassicEditor.defaultConfig = {
 			'restrictedEditingException',
 			'|',
 			'undo',
-			'redo'
+			'redo',
+			'SourceEditing'
 		]
 	},
 	blockToolbar: [
